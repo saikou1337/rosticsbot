@@ -1,0 +1,6 @@
+import requests
+from bs4 import BeautifulSoup as b
+
+URL = 'https://rostics.ru/promo/crazydays'
+r = requests.get(URL)
+print(r.status_code)
