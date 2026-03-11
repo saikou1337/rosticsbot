@@ -3,7 +3,7 @@ import telebot
 from bs4 import BeautifulSoup as b
 
 URL = 'https://rostics.ru/promo/crazydays'
-API_KEY = '8630240850:AAE3FTuNZOnariyGKFHYwG9BksFLZmnOc14'
+API_KEY = '8602811245:AAEYXcNpGMH9WUmT57qC_YAKUAJewdDJ3Ps'
 r = requests.get(URL)
 
 bot = telebot.TeleBot(API_KEY)
