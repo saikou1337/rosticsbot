@@ -1,6 +1,13 @@
 import requests
+import telebot
 from bs4 import BeautifulSoup as b
 
 URL = 'https://rostics.ru/promo/crazydays'
+API_KEY = '8630240850:AAHIcNDEp6iqulMrEOH2fFv0-oHQkBylIms'
 r = requests.get(URL)
-print(r.status_code)
+
+bot = telebot.TeleBot(API_KEY)
+@bot.message.handler(commands=['начать'])
+
+def hello(message):
+  bot.send_message(message.chat.id, 'Привет')
