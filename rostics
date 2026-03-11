@@ -11,3 +11,5 @@ bot = telebot.TeleBot(API_KEY)
 
 def hello(message):
   bot.send_message(message.chat.id, 'Привет')
+
+bot.polling()
