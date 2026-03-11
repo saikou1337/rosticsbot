@@ -1,6 +1,6 @@
 import requests
 import telebot
-from beautifulsoup4 import BeautifulSoup
+import BeautifulSoup
 
 URL = 'https://rostics.ru/promo/crazydays'
 API_KEY = '8602811245:AAEYXcNpGMH9WUmT57qC_YAKUAJewdDJ3Ps'
