@@ -17,4 +17,4 @@ def parser():
 def hello(message):
   bot.send_message(message.chat.id, akciya)
 
-bot.infinity_polling()
+bot.polling()
