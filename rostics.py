@@ -2,7 +2,7 @@ import requests
 import telebot
 from bs4 import BeautifulSoup
 
-URL = 'https://rostics.ru'
+URL = 'https://rostics.ru/promo'
 API_KEY = '8602811245:AAEYXcNpGMH9WUmT57qC_YAKUAJewdDJ3Ps'
 bot = telebot.TeleBot(API_KEY)
 def parser():
