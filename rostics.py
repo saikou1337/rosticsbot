@@ -1,10 +1,9 @@
 import requests
 import telebot
 from bs4 import BeautifulSoup
-import os
 
 URL = 'https://rostics.ru'
-API_KEY = os.environ.get('TELEGRAM_BOT_TOKEN', '8602811245:AAEYXcNpGMH9WUmT57qC_YAKUAJewdDJ3Ps')
+API_KEY = '8602811245:AAEYXcNpGMH9WUmT57qC_YAKUAJewdDJ3Ps'
 bot = telebot.TeleBot(API_KEY)
 def parser():
     r = requests.get(URL)
