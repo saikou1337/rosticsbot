@@ -9,7 +9,7 @@ bot = telebot.TeleBot(API_KEY)
 def parser():
     r = requests.get(URL)
     soup = BeautifulSoup(r.text, 'html.parser')
-    element = soup.find('div', class_='_14ZQf5wtqxX')
+    element = soup.find('h1', class_='_1-7Ufy1g4eD h1')
     return [c.text for c in element]
   
 @bot.message_handler(commands=['5050'])
